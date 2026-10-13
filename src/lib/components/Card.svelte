@@ -1,11 +1,12 @@
 <script>
     import Picture from "./card-internals/Picture.svelte";
     import Details from "./card-internals/Details.svelte";
+    let { bananas } = $props();
 </script>
 
 <article class="card">
     <Picture />
-    <Details />
+    <Details apples = {bananas} />
 </article>
 
 <style>

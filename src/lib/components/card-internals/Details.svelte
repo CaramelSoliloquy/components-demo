@@ -1,10 +1,18 @@
+<script>
+    let { apples = {
+    fullName:"meow",
+    favouriteSong:"meow",
+    petsName: "meow"
+    }   } = $props();
+</script>
+
 <section>
-    <h2>Phill Connors</h2>
+    <h2>{apples.fullName}</h2>
     <dl>
         <dt>Favourite song:</dt>
-        <dd>I Got You Babe</dd>
+        <dd>{apples.favouriteSong}</dd>
         <dt>Pet's name:</dt>
-        <dd>Punxsutawney Phil</dd>
+        <dd>{apples.petsName}</dd>
     </dl>
 </section>
 
