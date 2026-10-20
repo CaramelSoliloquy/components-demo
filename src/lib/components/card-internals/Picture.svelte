@@ -1,8 +1,10 @@
 <script>
     import billm from '$lib/assets/images/groundhog-day.webp';
+    import meow from '$lib/assets/images/OIP.webp';
+    let { oranges = { img:billm, alt: meowps} } = $props();
 </script>
 
-<img src="{billm}" alt="Phil Connors">
+<img src="{oranges.img}" alt="{oranges.alt}">
 
 <style>
     img {
@@ -11,6 +13,6 @@
             object-fit: cover;
             object-position: center;
             border-radius: 30px;
-            corner-shape: squircle;
+            corner-shape: circle;
         }
 </style>

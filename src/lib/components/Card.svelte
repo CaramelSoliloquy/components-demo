@@ -5,7 +5,7 @@
 </script>
 
 <article class="card">
-    <Picture />
+    <Picture oranges = {bananas} />
     <Details apples = {bananas} />
 </article>
 
